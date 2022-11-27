@@ -13,9 +13,9 @@ else
     Console.WriteLine(sum);
 }
 
-int SumCountFromMToN(int n, int m)
+int SumCountFromMToN(int N, int M)
 {
-    if (n < m) return 0;
-    int sum = SumCountFromMToN(n - 1, m);
-    return sum += n;
+    if (N < M) return 0;
+    int sum = SumCountFromMToN(N - 1, M);
+    return sum += N;
 }
